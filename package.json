@@ -1,5 +1,8 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4a8c676 (actualização)
   "name": "conceitos-node",
   "version": "1.0.0",
   "description": "Esse projeto é um conceito basico para entender melhor o node",
@@ -17,6 +20,7 @@
   },
   "devDependencies": {
     "prisma": "^5.18.0"
+<<<<<<< HEAD
 =======
   "name": "conceitos-node-2.0",
   "version": "1.0.0",
@@ -32,5 +36,7 @@
   "dependencies": {
     "express": "^4.19.2"
 >>>>>>> fb687ec (node)
+=======
+>>>>>>> 4a8c676 (actualização)
   }
 }
