@@ -1,0 +1,20 @@
+{
+  "name": "conceitos-node",
+  "version": "1.0.0",
+  "description": "Esse projeto é um conceito basico para entender melhor o node",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Mauricio Orozco",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.18.0",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "prisma": "^5.18.0"
+  }
+}
