@@ -6,7 +6,7 @@ const prisma = new PrismaClient()
 const app = express()
 app.use(express.json())
 
-
+// ROTA GET 
 app.get('/usuarios', async (req, res) => {
 
     const users = await prisma.user.findMany()
@@ -15,6 +15,8 @@ app.get('/usuarios', async (req, res) => {
     res.status(200).json(users)
 })
 
+
+//  ROTA POST
 app.post('/usuarios', async (req, res) => {
 
     const user = await prisma.user.create({
@@ -28,6 +30,8 @@ app.post('/usuarios', async (req, res) => {
     res.status(201).json(user)
 })
 
+
+//  ROTA PUT
 app.put('/usuarios/:id', async (req, res) => {
 
     
@@ -46,15 +50,17 @@ app.put('/usuarios/:id', async (req, res) => {
     res.status(201).json(user)
 })
 
-// app.delete('/usuarios/:id', async (req, res) => {
-//     await prisma.user.delete({
-//         where: {
-//             id: req.params.id,
-//         }
-//     })
+//  ROTA DELETE
+app.delete('/usuarios/:id', async (req, res) => {
+    await prisma.user.delete({
+        where: {
+            id: req.params.id,
+        }
+    })
 
-//     res.status(200).json({ message: 'Usuario deletado com sucesso!' })
+    res.status(200).json({ message: 'Usuario deletado com sucesso!' })
 
-// })
+})
 
-app.listen(3000)
+app.listen(3000)    // PORTA PARA RODAR O CODIGO, NÃO PODE SER USSADA EM OUTRO CODIGO.
+//http://localhost:3000
