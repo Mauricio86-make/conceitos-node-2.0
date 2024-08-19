@@ -62,5 +62,7 @@ app.delete('/usuarios/:id', async (req, res) => {
 
 })
 
-app.listen(3000)    // PORTA PARA RODAR O CODIGO, NÃO PODE SER USSADA EM OUTRO CODIGO.
+app.listen(3000, () => {
+    console.log('🚀 Server started on port 3000')
+})    // PORTA PARA RODAR O CODIGO, NÃO PODE SER USSADA EM OUTRO CODIGO.
 //http://localhost:3000
